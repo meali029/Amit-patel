@@ -1,0 +1,143 @@
+.blog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .blog-title {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .blog-post {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .blog-post:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .blog-header {
+    cursor: pointer;
+  }
+  
+  .blog-header h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .blog-meta {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .blog-content {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .blog-excerpt {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .subscribe-form {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .subscribe-form h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-form p {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-form form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .subscribe-form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 250px;
+  }
+  
+  .subscribe-form button {
+    background-color: #1d79cc;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .subscribe-form button:hover {
+    background-color: #166cbf;
+  }
+  
+  @media (max-width: 768px) {
+    .blog-title {
+      font-size: 28px;
+    }
+  
+    .blog-posts {
+      gap: 30px;
+    }
+  
+    .blog-header h3 {
+      font-size: 20px;
+    }
+  
+    .blog-meta {
+      font-size: 12px;
+    }
+  
+    .blog-content {
+      font-size: 14px;
+    }
+  
+    .blog-excerpt {
+      font-size: 14px;
+    }
+  
+    .subscribe-form form {
+      flex-direction: column;
+    }
+  
+    .subscribe-form input {
+      width: 100%;
+    }
+  
+    .subscribe-form button {
+      width: 100%;
+    }
+  }
+  

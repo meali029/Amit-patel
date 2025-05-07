@@ -1,0 +1,93 @@
+/* Book Consultation Styles */
+.consultation-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #ffffff, #f2f8ff);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.consultation-container h1 {
+    font-size: 2.2rem;
+    color: #1b8aed;
+    margin-bottom: 15px;
+}
+
+.consultation-container p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.consultation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.consultation-form input,
+.consultation-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background: #f9f9f9;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.consultation-form input:focus,
+.consultation-form textarea:focus {
+    border-color: #1b8aed;
+    box-shadow: 0 0 5px rgba(27, 138, 237, 0.5);
+    outline: none;
+}
+
+.consultation-form textarea {
+    resize: none;
+}
+
+.consultation-form button {
+    padding: 12px 20px;
+    background: #1b8aed;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.consultation-form button:hover {
+    background: #166cbf;
+    transform: translateY(-3px);
+}
+
+.consultation-form button:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .consultation-container {
+        padding: 15px;
+    }
+
+    .consultation-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .consultation-container p {
+        font-size: 0.9rem;
+    }
+
+    .consultation-form button {
+        font-size: 0.9rem;
+    }
+}

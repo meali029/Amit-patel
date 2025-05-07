@@ -1,0 +1,161 @@
+.periodontics-page {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Hero Section */
+  .herop {
+    background: linear-gradient(to right, #055aa4, #2081d6);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .herop h1 {
+    font-size: 2.5rem;
+  }
+  
+  .herop p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  
+  .herop .cta-button {
+    background: #f4a261;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  .hero-text p{
+    color: rgb(193, 193, 193);
+  }
+  .herop .cta-button:hover {
+    background: #e76f51;
+  }
+  
+  /* About Section */
+  .about-section {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .about-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  /* Symptoms Section */
+  .symptoms-section ul {
+    list-style: disc;
+    margin: 20px;
+    padding-left: 40px;
+  }
+  
+  .symptoms-section ul li {
+    margin: 10px 0;
+  }
+  
+  /* Treatments Section */
+  .treatments-section {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px 0;
+  }
+  
+  .treatments-section .treatment-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .treatment-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .treatment-card h3 {
+    color: #03539a;
+  }
+  
+  .treatment-card p {
+    color: #555;
+  }
+  
+  /* Testimonials Section */
+  .testimonials-section {
+    background: #1d79cc;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .testimonials-section blockquote {
+    font-style: italic;
+    margin: 20px 0;
+  }
+  
+  /* CTA Section */
+  .cta-section {
+    text-align: center;
+    padding: 30px;
+    margin-top: 5px;
+    background: #a7cff2;
+    color: white;
+    border-radius: 10px;
+  }
+  .cta-button h2{
+    color:#ddd
+  }
+ .cta-button{
+    background: #27a2f4;
+    transition: All 0.3s ease;
+    color: black;
+
+  }
+   .cta-button:hover{
+    background: #1f557a;
+    color: #ffffff;
+    transform: scale(1.05);
+  }
+  .cta-button a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+  }
+  .cta-section p {
+    margin-bottom: 20px;
+  }
+  
+  .cta-section .cta-button {
+    background: #f4a261;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-section .cta-button:hover {
+    background: #e76f51;
+  }

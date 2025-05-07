@@ -1,0 +1,182 @@
+/* Main container */
+.box-section {
+  background: #000;
+  display: flex;
+  justify-content: space-around; 
+  align-items: flex-start;
+  flex-wrap: wrap;
+  background: url('/public/imgs/Layer\ 24.png') no-repeat;
+  background-position: center top;
+  background-size: cover; 
+  padding: 40px 20px;
+  height: auto; 
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Box styles */
+.box {
+  background-color: #fff;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideIn 0.8s ease-in-out;
+  overflow: hidden; 
+}
+
+.box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Box headers */
+.box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+  animation: slideDown 0.8s ease-in-out;
+}
+
+/* Text styling */
+.box p {
+  font-family: 'Calibri', sans-serif;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+  margin: 10px 0;
+  overflow: hidden;
+ 
+}
+
+/* Box 2 image styles */
+.box2img {
+  width: 100%;
+  max-width: 200px;
+  margin: 15px 0;
+  border-radius: 8px; 
+}
+
+/* Form inputs */
+.box3 input[type="text"], 
+.box3 input[type="email"], 
+.box3 input[type="tel"], 
+.box3 textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-family: 'Calibri', sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.box3 input:focus, .box3 textarea:focus {
+  border-color: #1b8aed;
+  outline: none;
+}
+
+
+/* Button positioning */
+.read-more, .read-more2, .submit {
+  background-color: #1b8aed;
+  color: #fff;
+  width: 170px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  position: absolute; 
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%); 
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more a, .read-more2 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.read-more:hover, .read-more2:hover, .submit:hover {
+  background-color: #166cbf;
+  transform: translate(-50%, -3px);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .box {
+    width: 250px; 
+    height: 400px; 
+  }
+  .box2img {
+    max-width: 180px;
+  }
+}
+
+/* Small screens (less than 768px) */
+@media (max-width: 768px) {
+  .box-section {
+    flex-direction: column; 
+    align-items: center; 
+   
+  }
+  .box {
+    width: 90%;
+    max-width: 300px;
+    height: 400px; 
+    margin: 15px 0;
+  }
+  .box2img {
+    max-width: 150px;
+  }
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,116 @@
+.rectangle {
+  width: 100%;
+  height: auto;
+  background-color: #4fa1ea;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 15px;
+  gap: 10px;
+}
+
+.rectangle a {
+  flex: 1 1 20%; 
+  max-width: 150px; 
+}
+
+.rectangle a img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.rectangle a img:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries */
+
+/* Large screens (1200px and up) */
+@media (min-width: 1200px) {
+  .rectangle a {
+    flex: 1 1 18%;
+  }
+}
+
+/* Medium screens (768px to 1199px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .rectangle {
+    gap: 15px;
+  }
+  .rectangle a {
+    flex: 1 1 22%;
+  }
+}
+
+/* Small screens (480px to 767px) */
+@media (max-width: 767px) {
+  .rectangle {
+    gap: 10px;
+  }
+  .rectangle a {
+    flex: 1 1 45%; 
+  }
+}
+
+/* Extra small screens (below 480px) */
+@media (max-width: 480px) {
+  .rectangle {
+    flex-direction: column; 
+    gap: 10px;
+    align-items: center;
+  }
+  .rectangle a {
+    flex: 1 1 100%; 
+  }
+}
+
+  
+  /* Keyframe Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(-5px);
+    }
+    50% {
+      transform: translateX(5px);
+    }
+    75% {
+      transform: translateX(-5px);
+    }
+  }
+  
+  @keyframes slideDown {
+    from {
+      transform: translateY(-20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  

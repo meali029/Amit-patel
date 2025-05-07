@@ -1,0 +1,129 @@
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .faq-title {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .faq-item {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .faq-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .faq-question.active {
+    color: #1d79cc;
+  }
+  
+  .faq-toggle {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .faq-answer {
+    margin-top: 15px;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  .submit-question {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .submit-question h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .submit-question form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .submit-question input,
+  .submit-question textarea {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .submit-question button {
+    background-color: #1d79cc;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .submit-question button:hover {
+    background-color: #166cbf;
+  }
+  
+  .thank-you-message {
+    text-align: center;
+    font-size: 16px;
+    color: #4caf50;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .faq-title {
+      font-size: 28px;
+    }
+  
+    .faq-question {
+      font-size: 16px;
+    }
+  
+    .faq-answer {
+      font-size: 14px;
+    }
+  
+    .submit-question form {
+      gap: 10px;
+    }
+  
+    .submit-question input,
+    .submit-question textarea {
+      font-size: 14px;
+    }
+  }
+  

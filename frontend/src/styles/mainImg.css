@@ -1,0 +1,129 @@
+.main-text {
+  font-size: 2.5rem;
+  padding-left: 110px;
+  color: #4fa1ea;
+  position: absolute;
+  top: 100px;
+  left: 20px;
+}
+.main-image {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  overflow: hidden;
+  z-index: 1;
+}
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.slide.active {
+  opacity: 1;
+}
+/* Media Queries */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  
+  .main-text {
+      font-size: 2rem;
+      left: 15px;
+      top: 80px;
+  }
+  .main-image {
+      height: 20rem;
+  }
+}
+
+/* For large smartphones (max-width: 768px) */
+@media (max-width: 768px) {
+ 
+ 
+  .main-text {
+      font-size: 1.8rem;
+      left: 10px;
+      top: 70px;
+  }
+  .main-image {
+      height: 18rem;
+  }
+}
+
+/* For small smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+  .navbar {
+      padding: 0;
+  }
+  .navbar ul {
+      align-items: center;
+  }
+  .navbar ul li a {
+      font-size: 0.9rem;
+  }
+  .menu-icon {
+      top: 15px;
+      right: 15px;
+  }
+  .main-text {
+      font-size: 1.5rem;
+      left: 5px;
+      top: 60px;
+  }
+  .main-image {
+      height: 15rem;
+  }
+}
+
+
+
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

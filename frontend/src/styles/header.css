@@ -1,0 +1,183 @@
+/* General Styles (default for large screens) */
+.logo {
+  padding-left: 10px;
+}
+.logo img {
+  width: 80px;
+  margin: 15px;
+  cursor: pointer;
+  border-radius: 150px;
+  position: absolute;
+}
+.topHeader {
+  display: flex;
+  flex-direction: column;
+  background: url('/public/imgs/Layer\ 24.png');
+}
+.top-header {
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 20px;
+  padding-right: 110px;
+}
+.phoneNumber {
+  display: flex;
+  position: absolute;
+  justify-content: flex-end;
+  width: 100%;
+  top: 50px;
+  align-items: flex-end;
+  padding: 10px 20px;
+}
+.phone-number {
+  margin-right: 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #828282;
+}.button1, .button2 {
+  display: inline-block; /* Ensures proper alignment */
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-left: 10px;
+  border: none;
+  border-radius: 6px; /* Smooth rounded corners */
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transitions for hover effects */
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.button1 {
+  background-color: #555555; /* Slightly lighter gray for better contrast */
+  color: #fff;
+}
+
+.button2 {
+  background-color:#4c88e2; /* Vibrant blue */
+  color: #fff;
+}
+
+.button1 a, .button2 a {
+  text-decoration: none;
+  color: inherit; /* Ensures text color matches the button */
+  font-weight: bold;
+}
+
+.button1:hover {
+  background-color: #444444; /* Slightly darker gray */
+  transform: translateY(-3px) scale(1.02); /* Lift and slightly enlarge on hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+}
+
+.button2:hover {
+  background-color:#2b59bc; /* Darker blue */
+  transform: translateY(-3px) scale(1.02); /* Lift and slightly enlarge on hover */
+  box-shadow: 0px 6px 12px rgba(59, 130, 246, 0.3); /* Blue-tinted shadow */
+}
+
+.button1:active, .button2:active {
+  transform: translateY(0); /* Remove lift effect on click */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15); /* Reduce shadow */
+}
+
+.header-logo h1, .header-logo p {
+  color: #4fa1ea;
+}
+.header-logo h1 {
+  font-size: 2rem;
+  padding-left: 110px;
+}
+.header-logo p {
+  font-size: 0.8rem;
+  padding-left: 110px;
+}
+
+
+/* Media Queries */
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .logo img {
+      width: 70px;
+      margin: 10px;
+  }
+  .top-header {
+      padding-right: 50px;
+  }
+  .phoneNumber {
+      top: 40px;
+  }
+  .phone-number {
+      font-size: 0.9rem;
+  }
+  .header-logo h1 {
+      font-size: 1.8rem;
+      padding-left: 80px;
+  }
+  .header-logo p {
+      font-size: 0.7rem;
+      padding-left: 80px;
+  }
+}
+
+/* For large smartphones (max-width: 768px) */
+@media (max-width: 768px) {
+  .topHeader {
+      flex-direction: column;
+  }
+  
+  .logo img {
+        width: 80px;
+        top: 20px;
+        left: 2px;
+  }
+  .top-header {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 12px 10px ;
+      gap: 10px;
+  }
+  .phoneNumber {
+      position: static;
+      padding: 5px;
+  }
+  .phone-number {
+      font-size: 0.8rem;
+  }
+  .header-logo h1 {
+      font-size: 1.5rem;
+      padding-left: 20px;
+  }
+  .header-logo p {
+      font-size: 0.7rem;
+      padding-left: 20px;
+  }
+}
+
+/* For small smartphones (max-width: 480px) */
+@media (max-width: 480px) {
+  .logo img {
+      width: 60px;
+  }
+  .top-header {
+      flex-direction: column;
+      gap: 5px;
+  }
+  .button1, .button2 {
+      font-size: 12px;
+      padding: 8px 12px;
+  }
+  .header-logo h1 {
+      font-size: 1.2rem;
+  }
+  .header-logo p {
+      font-size: 0.6rem;
+  }
+  .phone-number {
+      font-size: 0.7rem;
+  }
+}

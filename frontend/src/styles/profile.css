@@ -1,0 +1,195 @@
+/* General Container Styles */
+.profile-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom right, #ffffff, #f4f4f9);
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    color: #333;
+}
+
+.profile-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: #222;
+    font-weight: 700;
+}
+
+.profile-container .section-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #444;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Cards Container */
+.appointments, .consultations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Appointment/Consultation Card Styles */
+.appointment-card, .consultation-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(33.333% - 30px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appointment-card:hover, .consultation-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.appointment-card p, .consultation-card p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.appointment-card strong, .consultation-card strong {
+    color: #222;
+}
+
+/* Form Fields for Editing */
+.appointment-card input,
+.consultation-card input,
+.appointment-card textarea,
+.consultation-card textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.appointment-card textarea, .consultation-card textarea {
+    resize: none;
+}
+
+/* Buttons */
+.EditBtn, .DeleteBtn, .SaveBtn, .CancelBtn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.EditBtn:hover, .DeleteBtn:hover, .SaveBtn:hover, .CancelBtn:hover {
+    opacity: 0.9;
+}
+
+.EditBtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.DeleteBtn {
+    background-color: #f44336;
+    color: white;
+}
+
+.SaveBtn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.CancelBtn {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* New Section: User Statistics */
+.user-stats {
+    margin-top: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-stats .stat-item {
+    text-align: center;
+}
+
+.user-stats .stat-item h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.user-stats .stat-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .appointment-card, .consultation-card {
+        width: calc(50% - 30px);
+    }
+    .user-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .appointment-card, .consultation-card {
+        width: 100%;
+    }
+}
+
+/* Add More Content: Testimonials */
+.testimonials {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.testimonials .testimonial-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .testimonial-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.testimonials .testimonial-item .author {
+    font-weight: bold;
+    color: #222;
+    margin-top: 10px;
+}

@@ -1,0 +1,188 @@
+
+/* About us */
+.aboutus {
+    height: auto;
+    width: 100%;
+    display: flex;
+    color: aliceblue;
+    font-size: .9rem;
+  }
+  
+  .aboutbox1{
+    background-color: #4fa1ea;
+    height: auto;
+    width: 40%;
+    padding: 10px;
+
+  }
+  
+.aboutbox2{
+    background-color:#1d79cc;
+    height: auto;
+    width: 20%;
+    padding: 10px;
+
+  
+  }
+  .aboutbox3{
+    background-color: #03539a;
+    height: auto;
+    width: 40%;
+    padding: 10px;
+
+  
+  }
+  /* .aboutbox1:hover, .aboutbox2:hover, .aboutbox3:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+  }
+   */
+.context{
+  width: 280px;
+  float: right;
+  padding:35px 13px 0px 0px ;
+
+}
+
+.context h1,.context hr,.context p{
+  margin: 0px 0px 6px 0px;
+  font-weight: 400;
+  color: aliceblue;
+
+
+}
+
+.list p{
+  margin: 2px;
+  display: inline-block;
+  padding: 5px;
+  border: 1.5px solid white;
+}
+.list p a{
+  text-decoration: none;
+  color: inherit;
+}
+.list p:hover {
+  color: #ffffff;
+  transition: color 0.4s ease, text-decoration 0.3s ease; 
+  cursor: pointer;
+  transform: translateY(-3px) scale(1.02); 
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.contextmid{
+  width: 80%;
+  margin: auto;
+  padding:35px 0px 0px 20px ;
+  height: auto;
+
+}
+.contextmid h1,.contextmid hr,.contextmid p{
+  margin: 0px 0px 6px 0px;
+  color: aliceblue;
+  font-weight: 400;
+
+}
+.contextlast{
+  width: 280px;
+  float: left;
+  padding:35px 0px 0px 0px ;
+  margin-left: 30px;
+
+}
+.contextlast h1, .contextlast hr, .contextlast p{
+  margin: 0px 0px 6px 0px;
+  font-weight: 400;
+  color: aliceblue;
+
+}
+
+@media screen and (max-width: 768px) {
+  /* About us */
+  .aboutus {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+  }
+
+  .aboutbox1, .aboutbox2, .aboutbox3 {
+      width: 90%;
+      height: auto;
+      padding: 10px;
+      margin: auto;
+  }
+.context,.contextlast,.contextmid{
+  margin: auto;
+  float: none;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 480px) {
+ 
+  /* About Us Section */
+  .aboutus {
+      flex-direction: column;
+      height: auto;
+      padding: 5px;
+  }
+
+  .aboutbox1, .aboutbox2, .aboutbox3 {
+      width: 100%;
+      padding: 5px;
+  }
+
+  .context, .contextmid, .contextlast {
+      width: 90%;
+      margin: auto;
+      padding: 10px;
+  }
+}
+
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

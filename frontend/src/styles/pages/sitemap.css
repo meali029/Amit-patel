@@ -1,0 +1,51 @@
+/* styles/sitemap.css */
+
+.sitemap-container {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.sitemap-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sitemap-container p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sitemap-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sitemap-list li {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.sitemap-list li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.sitemap-list li a:hover {
+    color: #0056b3;
+}
+
+.sitemap-list li a:focus {
+    outline: none;
+    color: #0056b3;
+}

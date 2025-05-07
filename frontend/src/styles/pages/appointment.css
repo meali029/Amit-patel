@@ -1,0 +1,88 @@
+/* styles/requestAppointment.css */
+
+.appointment-container {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 40px auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.appointment-container h1 {
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.appointment-container p {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.appointment-form input,
+.appointment-form textarea,
+.appointment-form button {
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.appointment-form input:focus,
+.appointment-form textarea:focus,
+.appointment-form button:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.appointment-form input,
+.appointment-form textarea {
+    width: 100%;
+}
+
+.appointment-form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.appointment-form button:hover {
+    background-color: #0056b3;
+}
+
+.appointment-form textarea {
+    resize: vertical;
+}
+
+.appointment-form input[type="date"],
+.appointment-form input[type="time"] {
+    padding-left: 10px;
+}
+
+.appointment-form input::placeholder,
+.appointment-form textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+.appointment-form input:focus::placeholder,
+.appointment-form textarea:focus::placeholder {
+    color: #007bff;
+}
+
+.appointment-form button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
